@@ -1,0 +1,361 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.movieshub.app.movieshub"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/amanthakur/StudioProjects/movieshub/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/amanthakur/StudioProjects/movieshub/android/app/src/debug/AndroidManifest.xml:6:22-64
+16    <!--
+17     Required to query activities that can process text, see:
+18         https://developer.android.com/training/package-visibility and
+19         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+20
+21         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+22    -->
+23    <queries>
+23-->/Users/amanthakur/StudioProjects/movieshub/android/app/src/main/AndroidManifest.xml:39:5-44:15
+24        <intent>
+24-->/Users/amanthakur/StudioProjects/movieshub/android/app/src/main/AndroidManifest.xml:40:9-43:18
+25            <action android:name="android.intent.action.PROCESS_TEXT" />
+25-->/Users/amanthakur/StudioProjects/movieshub/android/app/src/main/AndroidManifest.xml:41:13-72
+25-->/Users/amanthakur/StudioProjects/movieshub/android/app/src/main/AndroidManifest.xml:41:21-70
+26
+27            <data android:mimeType="text/plain" />
+27-->/Users/amanthakur/StudioProjects/movieshub/android/app/src/main/AndroidManifest.xml:42:13-50
+27-->/Users/amanthakur/StudioProjects/movieshub/android/app/src/main/AndroidManifest.xml:42:19-48
+28        </intent>
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[:connectivity_plus] /Users/amanthakur/StudioProjects/movieshub/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-79
+31-->[:connectivity_plus] /Users/amanthakur/StudioProjects/movieshub/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-76
+32    <uses-permission android:name="android.permission.CAMERA" />
+32-->[:mobile_scanner] /Users/amanthakur/StudioProjects/movieshub/build/mobile_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-65
+32-->[:mobile_scanner] /Users/amanthakur/StudioProjects/movieshub/build/mobile_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-62
+33
+34    <uses-feature
+34-->[:mobile_scanner] /Users/amanthakur/StudioProjects/movieshub/build/mobile_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-11:36
+35        android:name="android.hardware.camera"
+35-->[:mobile_scanner] /Users/amanthakur/StudioProjects/movieshub/build/mobile_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-47
+36        android:required="false" />
+36-->[:mobile_scanner] /Users/amanthakur/StudioProjects/movieshub/build/mobile_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-33
+37
+38    <permission
+38-->[androidx.core:core:1.13.1] /Users/amanthakur/.gradle/caches/8.9/transforms/55400baa15c966fba95a94dd1e74ae68/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+39        android:name="com.movieshub.app.movieshub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+39-->[androidx.core:core:1.13.1] /Users/amanthakur/.gradle/caches/8.9/transforms/55400baa15c966fba95a94dd1e74ae68/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+40        android:protectionLevel="signature" />
+40-->[androidx.core:core:1.13.1] /Users/amanthakur/.gradle/caches/8.9/transforms/55400baa15c966fba95a94dd1e74ae68/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+41
+42    <uses-permission android:name="com.movieshub.app.movieshub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+42-->[androidx.core:core:1.13.1] /Users/amanthakur/.gradle/caches/8.9/transforms/55400baa15c966fba95a94dd1e74ae68/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+42-->[androidx.core:core:1.13.1] /Users/amanthakur/.gradle/caches/8.9/transforms/55400baa15c966fba95a94dd1e74ae68/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+43
+44    <application
+45        android:name="android.app.Application"
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.13.1] /Users/amanthakur/.gradle/caches/8.9/transforms/55400baa15c966fba95a94dd1e74ae68/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+47        android:debuggable="true"
+48        android:extractNativeLibs="true"
+49        android:icon="@mipmap/ic_launcher"
+50        android:label="movieshub" >
+51        <activity
+52            android:name="com.movieshub.app.movieshub.MainActivity"
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+54            android:exported="true"
+55            android:hardwareAccelerated="true"
+56            android:launchMode="singleTop"
+57            android:taskAffinity=""
+58            android:theme="@style/LaunchTheme"
+59            android:windowSoftInputMode="adjustResize" >
+60
+61            <!--
+62                 Specifies an Android theme to apply to this Activity as soon as
+63                 the Android process has started. This theme is visible to the user
+64                 while the Flutter UI initializes. After that, this theme continues
+65                 to determine the Window background behind the Flutter UI.
+66            -->
+67            <meta-data
+68                android:name="io.flutter.embedding.android.NormalTheme"
+69                android:resource="@style/NormalTheme" />
+70
+71            <intent-filter>
+72                <action android:name="android.intent.action.MAIN" />
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+82            android:name="flutterEmbedding"
+83            android:value="2" />
+84        <!--
+85           Declares a provider which allows us to store files to share in
+86           '.../caches/share_plus' and grant the receiving action access
+87        -->
+88        <provider
+88-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-21:20
+89            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+89-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-77
+90            android:authorities="com.movieshub.app.movieshub.flutter.share_provider"
+90-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-74
+91            android:exported="false"
+91-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+92            android:grantUriPermissions="true" >
+92-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-47
+93            <meta-data
+93-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-20:68
+94                android:name="android.support.FILE_PROVIDER_PATHS"
+94-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-67
+95                android:resource="@xml/flutter_share_file_paths" />
+95-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-65
+96        </provider>
+97        <!--
+98           This manifest declared broadcast receiver allows us to use an explicit
+99           Intent when creating a PendingItent to be informed of the user's choice
+100        -->
+101        <receiver
+101-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-32:20
+102            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+102-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-82
+103            android:exported="false" >
+103-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-37
+104            <intent-filter>
+104-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
+105                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+105-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-65
+105-->[:share_plus] /Users/amanthakur/StudioProjects/movieshub/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-62
+106            </intent-filter>
+107        </receiver>
+108
+109        <activity
+109-->[:url_launcher_android] /Users/amanthakur/StudioProjects/movieshub/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-11:74
+110            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+110-->[:url_launcher_android] /Users/amanthakur/StudioProjects/movieshub/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-74
+111            android:exported="false"
+111-->[:url_launcher_android] /Users/amanthakur/StudioProjects/movieshub/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-37
+112            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+112-->[:url_launcher_android] /Users/amanthakur/StudioProjects/movieshub/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-71
+113        <!--
+114        Service for holding metadata. Cannot be instantiated.
+115        Metadata will be merged from other manifests.
+116        -->
+117        <service
+117-->[androidx.camera:camera-core:1.3.4] /Users/amanthakur/.gradle/caches/8.9/transforms/072fc2009c3fbd8839141c7b06a1dfe5/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:29:9-33:78
+118            android:name="androidx.camera.core.impl.MetadataHolderService"
+118-->[androidx.camera:camera-core:1.3.4] /Users/amanthakur/.gradle/caches/8.9/transforms/072fc2009c3fbd8839141c7b06a1dfe5/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:30:13-75
+119            android:enabled="false"
+119-->[androidx.camera:camera-core:1.3.4] /Users/amanthakur/.gradle/caches/8.9/transforms/072fc2009c3fbd8839141c7b06a1dfe5/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:31:13-36
+120            android:exported="false" >
+120-->[androidx.camera:camera-core:1.3.4] /Users/amanthakur/.gradle/caches/8.9/transforms/072fc2009c3fbd8839141c7b06a1dfe5/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:32:13-37
+121            <meta-data
+121-->[androidx.camera:camera-camera2:1.3.4] /Users/amanthakur/.gradle/caches/8.9/transforms/5e3c079badebb68c2cef43cbc746f187/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:30:13-32:89
+122                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+122-->[androidx.camera:camera-camera2:1.3.4] /Users/amanthakur/.gradle/caches/8.9/transforms/5e3c079badebb68c2cef43cbc746f187/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:31:17-103
+123                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+123-->[androidx.camera:camera-camera2:1.3.4] /Users/amanthakur/.gradle/caches/8.9/transforms/5e3c079badebb68c2cef43cbc746f187/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:32:17-86
+124        </service>
+125
+126        <activity
+126-->[com.google.android.gms:play-services-auth:21.0.0] /Users/amanthakur/.gradle/caches/8.9/transforms/ebe9ac052ba48ca02d348a2ecbbedf65/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:23:9-27:75
+127            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+127-->[com.google.android.gms:play-services-auth:21.0.0] /Users/amanthakur/.gradle/caches/8.9/transforms/ebe9ac052ba48ca02d348a2ecbbedf65/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:24:13-93
+128            android:excludeFromRecents="true"
+128-->[com.google.android.gms:play-services-auth:21.0.0] /Users/amanthakur/.gradle/caches/8.9/transforms/ebe9ac052ba48ca02d348a2ecbbedf65/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:25:13-46
+129            android:exported="false"
+129-->[com.google.android.gms:play-services-auth:21.0.0] /Users/amanthakur/.gradle/caches/8.9/transforms/ebe9ac052ba48ca02d348a2ecbbedf65/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:26:13-37
+130            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+130-->[com.google.android.gms:play-services-auth:21.0.0] /Users/amanthakur/.gradle/caches/8.9/transforms/ebe9ac052ba48ca02d348a2ecbbedf65/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:27:13-72
+131        <!--
+132            Service handling Google Sign-In user revocation. For apps that do not integrate with
+133            Google Sign-In, this service will never be started.
+134        -->
+135        <service
+135-->[com.google.android.gms:play-services-auth:21.0.0] /Users/amanthakur/.gradle/caches/8.9/transforms/ebe9ac052ba48ca02d348a2ecbbedf65/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:33:9-37:51
+136            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+136-->[com.google.android.gms:play-services-auth:21.0.0] /Users/amanthakur/.gradle/caches/8.9/transforms/ebe9ac052ba48ca02d348a2ecbbedf65/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:34:13-89
+137            android:exported="true"
+137-->[com.google.android.gms:play-services-auth:21.0.0] /Users/amanthakur/.gradle/caches/8.9/transforms/ebe9ac052ba48ca02d348a2ecbbedf65/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:35:13-36
+138            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+138-->[com.google.android.gms:play-services-auth:21.0.0] /Users/amanthakur/.gradle/caches/8.9/transforms/ebe9ac052ba48ca02d348a2ecbbedf65/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:36:13-107
+139            android:visibleToInstantApps="true" />
+139-->[com.google.android.gms:play-services-auth:21.0.0] /Users/amanthakur/.gradle/caches/8.9/transforms/ebe9ac052ba48ca02d348a2ecbbedf65/transformed/jetified-play-services-auth-21.0.0/AndroidManifest.xml:37:13-48
+140        <service
+140-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/6c4fa8c0de81de9b5d3954e51c933797/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:9:9-15:19
+141            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+141-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/6c4fa8c0de81de9b5d3954e51c933797/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:10:13-91
+142            android:directBootAware="true"
+142-->[com.google.mlkit:common:18.11.0] /Users/amanthakur/.gradle/caches/8.9/transforms/442ee513e55d0f2a86691fd3a2e7be4e/transformed/jetified-common-18.11.0/AndroidManifest.xml:17:13-43
+143            android:exported="false" >
+143-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/6c4fa8c0de81de9b5d3954e51c933797/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:11:13-37
+144            <meta-data
+144-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/6c4fa8c0de81de9b5d3954e51c933797/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:12:13-14:85
+145                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+145-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/6c4fa8c0de81de9b5d3954e51c933797/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:13:17-120
+146                android:value="com.google.firebase.components.ComponentRegistrar" />
+146-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/6c4fa8c0de81de9b5d3954e51c933797/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:14:17-82
+147            <meta-data
+147-->[com.google.mlkit:vision-common:17.3.0] /Users/amanthakur/.gradle/caches/8.9/transforms/78085f678d66515aad4d36db374e8bf5/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+148                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+148-->[com.google.mlkit:vision-common:17.3.0] /Users/amanthakur/.gradle/caches/8.9/transforms/78085f678d66515aad4d36db374e8bf5/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:13:17-124
+149                android:value="com.google.firebase.components.ComponentRegistrar" />
+149-->[com.google.mlkit:vision-common:17.3.0] /Users/amanthakur/.gradle/caches/8.9/transforms/78085f678d66515aad4d36db374e8bf5/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:14:17-82
+150            <meta-data
+150-->[com.google.mlkit:common:18.11.0] /Users/amanthakur/.gradle/caches/8.9/transforms/442ee513e55d0f2a86691fd3a2e7be4e/transformed/jetified-common-18.11.0/AndroidManifest.xml:20:13-22:85
+151                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+151-->[com.google.mlkit:common:18.11.0] /Users/amanthakur/.gradle/caches/8.9/transforms/442ee513e55d0f2a86691fd3a2e7be4e/transformed/jetified-common-18.11.0/AndroidManifest.xml:21:17-120
+152                android:value="com.google.firebase.components.ComponentRegistrar" />
+152-->[com.google.mlkit:common:18.11.0] /Users/amanthakur/.gradle/caches/8.9/transforms/442ee513e55d0f2a86691fd3a2e7be4e/transformed/jetified-common-18.11.0/AndroidManifest.xml:22:17-82
+153        </service>
+154
+155        <provider
+155-->[com.google.mlkit:common:18.11.0] /Users/amanthakur/.gradle/caches/8.9/transforms/442ee513e55d0f2a86691fd3a2e7be4e/transformed/jetified-common-18.11.0/AndroidManifest.xml:9:9-13:38
+156            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+156-->[com.google.mlkit:common:18.11.0] /Users/amanthakur/.gradle/caches/8.9/transforms/442ee513e55d0f2a86691fd3a2e7be4e/transformed/jetified-common-18.11.0/AndroidManifest.xml:10:13-78
+157            android:authorities="com.movieshub.app.movieshub.mlkitinitprovider"
+157-->[com.google.mlkit:common:18.11.0] /Users/amanthakur/.gradle/caches/8.9/transforms/442ee513e55d0f2a86691fd3a2e7be4e/transformed/jetified-common-18.11.0/AndroidManifest.xml:11:13-69
+158            android:exported="false"
+158-->[com.google.mlkit:common:18.11.0] /Users/amanthakur/.gradle/caches/8.9/transforms/442ee513e55d0f2a86691fd3a2e7be4e/transformed/jetified-common-18.11.0/AndroidManifest.xml:12:13-37
+159            android:initOrder="99" />
+159-->[com.google.mlkit:common:18.11.0] /Users/amanthakur/.gradle/caches/8.9/transforms/442ee513e55d0f2a86691fd3a2e7be4e/transformed/jetified-common-18.11.0/AndroidManifest.xml:13:13-35
+160
+161        <activity
+161-->[com.google.android.gms:play-services-base:18.5.0] /Users/amanthakur/.gradle/caches/8.9/transforms/630b8cac3ab2dcc9ac392dce76bba1f5/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+162            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+162-->[com.google.android.gms:play-services-base:18.5.0] /Users/amanthakur/.gradle/caches/8.9/transforms/630b8cac3ab2dcc9ac392dce76bba1f5/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+163            android:exported="false"
+163-->[com.google.android.gms:play-services-base:18.5.0] /Users/amanthakur/.gradle/caches/8.9/transforms/630b8cac3ab2dcc9ac392dce76bba1f5/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+164            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+164-->[com.google.android.gms:play-services-base:18.5.0] /Users/amanthakur/.gradle/caches/8.9/transforms/630b8cac3ab2dcc9ac392dce76bba1f5/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+165
+166        <meta-data
+166-->[com.google.android.gms:play-services-basement:18.4.0] /Users/amanthakur/.gradle/caches/8.9/transforms/3cfce61f875101ce81930b9b46c3135f/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+167            android:name="com.google.android.gms.version"
+167-->[com.google.android.gms:play-services-basement:18.4.0] /Users/amanthakur/.gradle/caches/8.9/transforms/3cfce61f875101ce81930b9b46c3135f/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+168            android:value="@integer/google_play_services_version" />
+168-->[com.google.android.gms:play-services-basement:18.4.0] /Users/amanthakur/.gradle/caches/8.9/transforms/3cfce61f875101ce81930b9b46c3135f/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+169
+170        <uses-library
+170-->[androidx.window:window:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/d1f861b18f2c0c0aea39bd3901e9092a/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+171            android:name="androidx.window.extensions"
+171-->[androidx.window:window:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/d1f861b18f2c0c0aea39bd3901e9092a/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+172            android:required="false" />
+172-->[androidx.window:window:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/d1f861b18f2c0c0aea39bd3901e9092a/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+173        <uses-library
+173-->[androidx.window:window:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/d1f861b18f2c0c0aea39bd3901e9092a/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+174            android:name="androidx.window.sidecar"
+174-->[androidx.window:window:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/d1f861b18f2c0c0aea39bd3901e9092a/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+175            android:required="false" />
+175-->[androidx.window:window:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/d1f861b18f2c0c0aea39bd3901e9092a/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+176
+177        <provider
+177-->[androidx.emoji2:emoji2:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/8988aadc6cf831de3bb533a49c5a3d9f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+178            android:name="androidx.startup.InitializationProvider"
+178-->[androidx.emoji2:emoji2:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/8988aadc6cf831de3bb533a49c5a3d9f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+179            android:authorities="com.movieshub.app.movieshub.androidx-startup"
+179-->[androidx.emoji2:emoji2:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/8988aadc6cf831de3bb533a49c5a3d9f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+180            android:exported="false" >
+180-->[androidx.emoji2:emoji2:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/8988aadc6cf831de3bb533a49c5a3d9f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+181            <meta-data
+181-->[androidx.emoji2:emoji2:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/8988aadc6cf831de3bb533a49c5a3d9f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+182                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+182-->[androidx.emoji2:emoji2:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/8988aadc6cf831de3bb533a49c5a3d9f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+183                android:value="androidx.startup" />
+183-->[androidx.emoji2:emoji2:1.2.0] /Users/amanthakur/.gradle/caches/8.9/transforms/8988aadc6cf831de3bb533a49c5a3d9f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+184            <meta-data
+184-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/amanthakur/.gradle/caches/8.9/transforms/2810377f6fbbf51475f679dd0603138f/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+185                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+185-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/amanthakur/.gradle/caches/8.9/transforms/2810377f6fbbf51475f679dd0603138f/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+186                android:value="androidx.startup" />
+186-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/amanthakur/.gradle/caches/8.9/transforms/2810377f6fbbf51475f679dd0603138f/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+187            <meta-data
+187-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+188                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+188-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+189                android:value="androidx.startup" />
+189-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+190        </provider>
+191
+192        <receiver
+192-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+193            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+194            android:directBootAware="false"
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+195            android:enabled="true"
+195-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+196            android:exported="true"
+196-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+197            android:permission="android.permission.DUMP" >
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+198            <intent-filter>
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+199                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+200            </intent-filter>
+201            <intent-filter>
+201-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+202                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+203            </intent-filter>
+204            <intent-filter>
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+205                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+206            </intent-filter>
+207            <intent-filter>
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+208                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/amanthakur/.gradle/caches/8.9/transforms/916e555a167370678e705bc4f0d45d77/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+209            </intent-filter>
+210        </receiver>
+211
+212        <service
+212-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/amanthakur/.gradle/caches/8.9/transforms/a02c36e74851f919439fa1f005055479/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+213            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+213-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/amanthakur/.gradle/caches/8.9/transforms/a02c36e74851f919439fa1f005055479/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+214            android:exported="false" >
+214-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/amanthakur/.gradle/caches/8.9/transforms/a02c36e74851f919439fa1f005055479/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+215            <meta-data
+215-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/amanthakur/.gradle/caches/8.9/transforms/a02c36e74851f919439fa1f005055479/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+216                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+216-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/amanthakur/.gradle/caches/8.9/transforms/a02c36e74851f919439fa1f005055479/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+217                android:value="cct" />
+217-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/amanthakur/.gradle/caches/8.9/transforms/a02c36e74851f919439fa1f005055479/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+218        </service>
+219        <service
+219-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/amanthakur/.gradle/caches/8.9/transforms/e08fd70f984a5ddd0303c3df39401607/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+220            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+220-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/amanthakur/.gradle/caches/8.9/transforms/e08fd70f984a5ddd0303c3df39401607/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+221            android:exported="false"
+221-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/amanthakur/.gradle/caches/8.9/transforms/e08fd70f984a5ddd0303c3df39401607/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+222            android:permission="android.permission.BIND_JOB_SERVICE" >
+222-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/amanthakur/.gradle/caches/8.9/transforms/e08fd70f984a5ddd0303c3df39401607/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+223        </service>
+224
+225        <receiver
+225-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/amanthakur/.gradle/caches/8.9/transforms/e08fd70f984a5ddd0303c3df39401607/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+226            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+226-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/amanthakur/.gradle/caches/8.9/transforms/e08fd70f984a5ddd0303c3df39401607/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+227            android:exported="false" />
+227-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/amanthakur/.gradle/caches/8.9/transforms/e08fd70f984a5ddd0303c3df39401607/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+228    </application>
+229
+230</manifest>

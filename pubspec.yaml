@@ -1,0 +1,95 @@
+name: movieshub
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  get: ^4.6.6
+
+  # Network image and cache manager
+  cached_network_image: ^3.3.0
+  flutter_cache_manager: ^3.3.1
+
+  # Shared preferences
+  shared_preferences: ^2.2.2
+
+  # Network API calling
+  retrofit: ^4.0.3
+  dio: ^5.4.0
+  json_annotation: ^4.8.1
+
+  # Custom style toast
+  flutter_styled_toast: ^2.2.1
+
+  # Device and package info utilities
+  device_info_plus: ^11.3.0
+  android_id: ^0.4.0
+  google_sign_in: ^6.2.1
+  flutter_secure_storage: ^9.0.0
+  connectivity_plus: ^6.1.3
+  package_info_plus: ^8.3.0
+  flutter_svg: ^2.0.9
+  flutter_svg_provider: ^1.0.6
+  gap: ^3.0.1
+  url_launcher: ^6.3.1
+  blurrycontainer: ^2.1.0
+  mobile_scanner: ^6.0.7
+  share_plus: ^10.1.4
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.7
+  flutter_gen_runner: ^5.10.0
+  retrofit_generator: ^9.1.9
+  json_serializable: ^6.9.4
+  flutter_launcher_icons: ^0.14.3
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+
+
+# The following section is specific to Flutter packages.
+flutter:
+
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 100
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 200
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 800
+
+
+flutter_gen:
+  integrations:
+    flutter_svg: true
+    lottie: true
