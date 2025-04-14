@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.movieshub.app.movieshub.app-mergeDebugResources-50:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.movieshub.app.movieshub.app-mergeDebugResources-51:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/amanthakur/.gradle/caches/8.9/transforms/430960d7d0187a7990dd38ee6ed254aa/transformed/appcompat-1.6.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/Xapads-Mac/.gradle/caches/8.9/transforms/430960d7d0187a7990dd38ee6ed254aa/transformed/appcompat-1.6.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

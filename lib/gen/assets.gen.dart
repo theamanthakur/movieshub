@@ -285,10 +285,21 @@ class $AssetsImagesGen {
       ];
 }
 
+class $AssetsPdfGen {
+  const $AssetsPdfGen();
+
+  /// File path: assets/pdf/ebook_sample.pdf
+  String get ebookSample => 'assets/pdf/ebook_sample.pdf';
+
+  /// List of all assets
+  List<String> get values => [ebookSample];
+}
+
 class Assets {
   const Assets._();
 
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsPdfGen pdf = $AssetsPdfGen();
 }
 
 class AssetGenImage {

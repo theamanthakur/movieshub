@@ -315,3 +315,19 @@ Map<String, dynamic> _$SpokenLanguageToJson(SpokenLanguage instance) =>
       'iso_639_1': instance.iso_639_1,
       'name': instance.name,
     };
+
+Notice _$NoticeFromJson(Map<String, dynamic> json) => Notice(
+      title: json['title'] as String,
+      subtitle: json['subtitle'] as String,
+      fileUrl: json['fileUrl'] as String,
+      dateTime: DateTime.parse(json['dateTime'] as String),
+      targetClasses: json['targetClasses'] as String,
+    );
+
+Map<String, dynamic> _$NoticeToJson(Notice instance) => <String, dynamic>{
+      'title': instance.title,
+      'subtitle': instance.subtitle,
+      'fileUrl': instance.fileUrl,
+      'dateTime': instance.dateTime.toIso8601String(),
+      'targetClasses': instance.targetClasses,
+    };

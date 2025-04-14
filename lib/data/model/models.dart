@@ -366,5 +366,26 @@ class SpokenLanguage {
 }
 
 
+@JsonSerializable()
+class Notice {
+  final String title;
+  final String subtitle;
+  final String fileUrl;
+  final DateTime dateTime;
+  final String targetClasses;
+
+  Notice({
+    required this.title,
+    required this.subtitle,
+    required this.fileUrl,
+    required this.dateTime,
+    required this.targetClasses,
+  });
+
+  factory Notice.fromJson(Map<String, dynamic> json) => _$NoticeFromJson(json);
+
+  Map<String, dynamic> toJson() => _$NoticeToJson(this);
+}
+
 
 

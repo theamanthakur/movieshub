@@ -82,3 +82,5 @@ class DetailController extends BaseController {
     Share.share(text);
   }
 }
+
+// here im writing for just dummy, today question were asked in flutter related to bloc

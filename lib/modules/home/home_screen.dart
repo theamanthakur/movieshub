@@ -145,7 +145,7 @@ class HomeScreen extends StatelessWidget {
                             child: InkWell(
                               onTap: () {
                                 Get.toNamed(
-                                  AppRoute.details,
+                                  AppRoute.notice,
                                   arguments: {
                                     "id": item.id,
                                   },
@@ -153,7 +153,7 @@ class HomeScreen extends StatelessWidget {
                               },
                               child: Container(
                                 width: 141,
-                                height: 170,
+                                height: 175,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(12.0),
                                   color: AppColor.white.withOpacity(0.5),
@@ -177,7 +177,7 @@ class HomeScreen extends StatelessWidget {
                                       left: 0,
                                       right: 0,
                                       child: Container(
-                                        height: 60,
+                                        height: 65,
                                         decoration: BoxDecoration(
                                           borderRadius: const BorderRadius.only(
                                             bottomLeft: Radius.circular(12.0),
@@ -267,7 +267,7 @@ class HomeScreen extends StatelessWidget {
                             child: InkWell(
                               onTap: () {
                                 Get.toNamed(
-                                  AppRoute.details,
+                                  AppRoute.timetable,
                                   arguments: {
                                     "id": item.id,
                                   },

@@ -85,4 +85,16 @@ class AppController extends BaseController{
     final isOpen = appPref.isFirstOpen;
     return isOpen;
   }
+
+  // Future<bool> hasInitialMessage() async {
+  //   RemoteMessage? initialMessage = await FirebaseMessaging.instance.getInitialMessage();
+  //   screen = initialMessage?.data['screen'].toString() ?? '';
+  //   fid = initialMessage?.data['fid'].toString() ?? '';
+  //   name = initialMessage?.data['name'].toString() ?? '';
+  //   title = initialMessage?.data['title'].toString() ?? '';
+  //   image = initialMessage?.data['image'].toString() ?? '';
+  //
+  //   debugPrint('notification hasInitialMessage  ::  $initialMessage and $screen');
+  //   return initialMessage != null;
+  // }
 }

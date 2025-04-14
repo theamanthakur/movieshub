@@ -1,5 +1,8 @@
 import 'package:movieshub/modules/details/detail_screen.dart';
 import 'package:movieshub/modules/onboarding/onboarding_screen.dart';
+import 'package:movieshub/modules/poc/ebook/ebook_screen.dart';
+import 'package:movieshub/modules/poc/profile/notice_board_screen.dart';
+import 'package:movieshub/modules/poc/profile/timetable_screen.dart';
 import 'package:movieshub/modules/search/search_screen.dart';
 
 import '../modules/home/home_screen.dart';
@@ -28,6 +31,9 @@ abstract class AppRoute {
   static const conversations = '/conversations';
   static const chat = '/chat';
   static const details = '/details';
+  static const ebook = '/ebook';
+  static const timetable = '/timetable';
+  static const notice = '/notice';
   static const onboarding = '/onboarding';
 
 
@@ -40,6 +46,9 @@ abstract class AppRoute {
     GetPage(name: scanner, page: BarcodeScannerScreen.new),
     GetPage(name: search, page: SearchScreen.new),
     GetPage(name: details, page: DetailScreen.new),
+    GetPage(name: ebook, page: EbookScreen.new),
+    GetPage(name: timetable, page: TimetableScreen.new),
+    GetPage(name: notice, page: NoticeBoardScreen.new),
 
 
   ];

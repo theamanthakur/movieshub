@@ -1,0 +1,1 @@
+ /Users/Xapads-Mac/StudioProjects/movieshub/.dart_tool/flutter_build/955664ea738806812689fa1b96bba24b/native_assets.yaml: 
